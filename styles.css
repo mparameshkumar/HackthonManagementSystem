@@ -1,0 +1,134 @@
+/* Apply a background image to the body */
+body {
+    font-family: 'Roboto', sans-serif; /* Use a modern, clean font */
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container styling with a subtle shadow and rounded corners */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+}
+
+/* Heading styles with a gradient color effect */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: 'Pacifico', cursive; /* Stylish cursive font for heading */
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient effect */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Form styling with rounded corners and shadow */
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Input and select styling with smooth borders and larger padding */
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Rounded corners */
+    box-sizing: border-box;
+    font-size: 1em;
+}
+
+/* Button styling with gradient background and hover effect */
+button {
+    background: linear-gradient(135deg, #007bff, #0056b3); /* Gradient button */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #0056b3, #003d7a); /* Darker gradient on hover */
+}
+
+/* Timer styling with bold font and center alignment */
+#timer {
+    font-size: 1.5em;
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Search input styling with padding and rounded corners */
+#search {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1em;
+}
+
+/* Project list styling with card layout */
+#projects {
+    margin-top: 20px;
+}
+
+.project-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-item h3 {
+    margin: 0;
+    color: #007bff;
+}
+
+.project-item p {
+    margin: 5px 0;
+}
+
+/* Add some responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
