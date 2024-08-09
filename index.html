@@ -5,37 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hackathon Management System</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Hackathon Management System</h1>
-        
         <form id="projectForm">
             <label for="title">Project Title:</label>
-            <input type="text" id="title" name="title" placeholder="Enter project title" required>
+            <input type="text" id="title" required>
 
             <label for="description">Project Description:</label>
-            <textarea id="description" name="description" placeholder="Enter project description" rows="6" required></textarea>
+            <textarea id="description" rows="4" required></textarea>
 
-            <label for="team">Team Members (comma-separated):</label>
-            <input type="text" id="team" name="team" placeholder="Enter team members (e.g., Member 1, Member 2)" required>
+            <label for="team">Team Members (comma separated):</label>
+            <input type="text" id="team" required>
 
-            <label for="theme">Project Theme:</label>
-            <select id="theme" name="theme" required>
-                <option value="" disabled selected>Select a theme</option>
+            <label for="theme">Theme:</label>
+            <select id="theme" required>
                 <option value="Game">Game</option>
                 <option value="Information System">Information System</option>
                 <option value="Smart Assistant">Smart Assistant</option>
                 <option value="Virtual Reality">Virtual Reality</option>
             </select>
 
-            <button type="submit">Submit</button>
+            <button type="submit">Add Project</button>
         </form>
-        
-        <div id="timer"></div>
-        
-        <input type="text" id="search" placeholder="Search projects">
 
+        <!-- Removed timer element -->
+        <!-- <div id="timer"></div> -->
+
+        <input type="text" id="search" placeholder="Search projects...">
         <div id="projects"></div>
     </div>
     <script src="script.js"></script>
